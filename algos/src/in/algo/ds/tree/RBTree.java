@@ -49,6 +49,7 @@ public class RBTree<Key extends Comparable<Key>,Value> {
 
 	public void put(Key key,Value val){
 		root=put(key,val,root);
+		root.color=BLACK;
 	}
 
 	private Node put(Key key, Value val, Node node) {
