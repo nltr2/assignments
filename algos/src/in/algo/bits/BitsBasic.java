@@ -2,12 +2,17 @@ package in.algo.bits;
 
 public class BitsBasic {
     /***
-     * 
+     * any shift of 32 will spit back the same integer without effect as JVM does not evaluate this.
      * @param args
      */    
     public static void main(String[] args) {
         int b = - 2344440; 
         System.out.println(b + " = "+Integer.toBinaryString(b));
+        
+        // any shift of 32 will spit back the same integer without effect as JVM does not evaluate this.
+        System.out.println(b + " = "+Integer.toBinaryString(b>>>32));
+        System.out.println(b + " = "+Integer.toBinaryString(b>>32));
+        System.out.println(b + " = "+Integer.toBinaryString(b<< 32));
 
         // check -1/2 will always be -1 due to flooring. so once -1 reached by >>, it will be always be -1: 
         //check next 2 examples.
