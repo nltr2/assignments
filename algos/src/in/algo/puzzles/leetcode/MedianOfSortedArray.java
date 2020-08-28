@@ -52,7 +52,7 @@ public class MedianOfSortedArray {
 			if(a[i-1]<= b[j] && b[j-1] <= a[i] && (i+j)==(m+n-i-j)){
 				break;
 			}
-			else if(a[i-1]<)
+		//	else if(a[i-1]<){}
 		}
 		
 		return 0;

@@ -21,7 +21,7 @@ public class ThreeSumZero {
 		for (Integer integer : arr) {
 			map.put(integer, integer);
 		}
-		map.ceilingKey(key)
+	//	map.ceilingKey(key)
 	}
 
 }
